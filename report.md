@@ -10,11 +10,7 @@ IMPORTANT: I have added text annotations - they are only viewable after a filter
 | Studio          | Studio 03                                                    |
 | Tutor           | Dr Jesmin Nahar                                              |
 
-### URL
-
-# TODO - UPDATE URL
-
-[VISUALISATION URL](https://andre-pham.github.io/FIT3179-Homework-Week10/)
+### URL: [VISUALISATION URL](https://andre-pham.github.io/FIT3179-Homework-Week10/)
 
 ### Screen Capture
 
@@ -24,7 +20,7 @@ IMPORTANT: I have added text annotations - they are only viewable after a filter
 
 <img src="C:\Users\andre\Desktop\Repositories\FIT3179\FIT3179-Homework-Week10\figure2.PNG" alt="figure2" style="zoom:67%;" /> 
 
-*Figure 2: Task 1 (Filtered to "Highway vehicles") (Annotation visible bottom right).*
+*Figure 2: Task 1 (Filtered to "Highway vehicles") (Annotation visible bottom right) (Tooltip being shown).*
 
 ### Domain
 
