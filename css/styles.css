@@ -17,6 +17,17 @@ p {
 	max-width: 60ch;
 }
 
+label, select {
+	font-family: 'Roboto', sans-serif;
+    color:#495057;
+	font-size: 14px;
+}
+
+select {
+	padding: 2px;
+	margin-left: 5px;
+}
+
 .page {
 	width: 850px;
 	background-color: white;

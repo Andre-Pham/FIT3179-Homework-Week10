@@ -46,11 +46,12 @@
         "y": {
             "field": "MEASUREMENT",
             "type": "quantitative",
-            "title": "Measurement",
+            "title": "VOC Emissions (10e6 Metric Tones)",
             "aggregate": "sum"
         },
         "color": {
             "field": "SOURCE",
+            "title": "Source",
             "type": "nominal",
             "scale": {
                 "domain": [
