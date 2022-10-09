@@ -1,0 +1,105 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Mean AQI Across CBSAs, 2021",
+    "width": 800,
+    "height": 400,
+    "projection": {
+        "type": "albersUsa"
+    },
+    "layer": [
+        {
+            "data": {
+                "url": "spatial/ne_50m_admin_1_states_provinces.topojson",
+                "format": {
+                    "type": "topojson",
+                    "feature": "ne_50m_admin_1_states_provinces"
+                }
+            },
+            "mark": {
+                "type": "geoshape",
+                "fill": "#E7DFC7",
+                "stroke": "white"
+            }
+        },
+        {
+            "data": {
+                "url": "spatial/ne_110m_graticules_5.topojson",
+                "format": {
+                    "type": "topojson",
+                    "feature": "ne_110m_graticules_5"
+                }
+            },
+            "mark": {
+                "type": "geoshape",
+                "stroke": "gray",
+                "fillOpacity": 0,
+                "strokeOpacity": 0.2
+            }
+        },
+        {
+            "data": {
+                "url": "spatial/cbsa_us_2014_ex_hi_ak.topojson",
+                "format": {
+                    "type": "topojson",
+                    "feature": "cbsa_2014_us_ex_hi_ak"
+                }
+            },
+            "transform": [
+                {
+                    "lookup": "properties.GEOID",
+                    "from": {
+                        "data": {
+                            "url": "data/us_aqi.csv"
+                        },
+                        "key": "CBSA",
+                        "fields": [
+                            "AQI",
+                            "Year"
+                        ]
+                    }
+                }
+            ],
+            "mark": {
+                "type": "geoshape"
+            },
+            "encoding": {
+                "color": {
+                    "field": "AQI",
+                    "type": "quantitative",
+                    "scale": {
+                        "type": "linear",
+                        "domain": [
+                            0,
+                            50,
+                            100
+                        ],
+                        "range": [
+                            "#51cf66",
+                            "#fcc419",
+                            "#ff6b6b"
+                        ]
+                    }
+                },
+                "tooltip": [
+                    {
+                        "field": "properties.GEOID",
+                        "type": "nominal",
+                        "title": "CBSA"
+                    },
+                    {
+                        "field": "AQI",
+                        "type": "quantitative",
+                        "format": ".2f"
+                    }
+                ]
+            }
+        }
+    ],
+    "config": {
+        "style": {
+            "cell": {
+                "stroke": "transparent"
+            }
+        }
+    }
+}
