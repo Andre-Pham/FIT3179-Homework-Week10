@@ -3,7 +3,7 @@
     "width": 500,
     "height": 300,
     "data": {
-        "url": "data/us_emissions_diffed.csv"
+        "url": "data/us_emissions.csv"
     },
     "params": [
         {
