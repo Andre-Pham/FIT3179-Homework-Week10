@@ -1,7 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 500,
-    "height": 300,
+    "width": "container",
     "data": {
         "url": "data/us_emissions.csv"
     },
@@ -117,5 +116,6 @@
                 }
             ]
         }
-    ]
+    ],
+    "config": {}
 }
