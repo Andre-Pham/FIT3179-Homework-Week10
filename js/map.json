@@ -18,7 +18,7 @@
             "mark": {
                 "type": "geoshape",
                 "fill": "#E7DFC7",
-                "stroke": "white"
+                "stroke": "#E7DFC7"
             }
         },
         {
@@ -60,7 +60,8 @@
                 }
             ],
             "mark": {
-                "type": "geoshape"
+                "type": "geoshape",
+                "stroke": "white"
             },
             "encoding": {
                 "color": {
@@ -73,11 +74,7 @@
                             50,
                             100
                         ],
-                        "range": [
-                            "#51cf66",
-                            "#fcc419",
-                            "#ff6b6b"
-                        ]
+                        "scheme": "reds"
                     }
                 },
                 "tooltip": [
