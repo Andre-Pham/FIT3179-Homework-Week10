@@ -1,6 +1,5 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Mean AQI Across CBSAs, 2021",
     "width": "container",
     "height": 400,
     "projection": {
