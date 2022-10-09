@@ -76,8 +76,27 @@
     "layer": [
         {
             "mark": {
-                "type": "area",
-                "tooltip": true
+                "type": "area"
+            },
+            "encoding": {
+                "tooltip": [
+                    {
+                        "field": "SOURCE",
+                        "type": "ordinal",
+                        "title": "Source"
+                    },
+                    {
+                        "field": "MEASUREMENT",
+                        "type": "quantitative",
+                        "title": "VOC (10e6 Tones)"
+                    },
+                    {
+                        "field": "YEAR",
+                        "type": "temporal",
+                        "timeUnit": "year",
+                        "title": "Year"
+                    }
+                ]
             }
         },
         {
